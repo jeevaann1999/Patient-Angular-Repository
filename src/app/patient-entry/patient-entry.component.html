@@ -4,35 +4,35 @@
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3 mt-4">
                 <div class="col col-12 col-sm-6 col-md-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Doctor Name</label>
-                    <input type="text" class="form-control">
+                    <label for="" class="form-label">Name</label>
+                    <input name="name"[(ngModel)]="name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Patient ID</label>
-                    <input type="text" class="form-control">
+                    <input name="patientid"[(ngModel)]="patientid" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Address</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="address"[(ngModel)]="address" id="" cols="30" rows="10" class="form-control"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Contact Number</label>
-                    <input type="text" class="form-control">
+                    <input name="contactNumber"[(ngModel)]="contactNumber" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Date of Appointment</label>
-                    <input type="date" name="" id="" class="form-control">
+                    <input name="dateOfAppointment"[(ngModel)]="dateOfAppointment" type="date" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Patient Photo</label>
-                    <input type="file" name="" id="" class="form-control">
+                    <input name="patientPhoto"[(ngModel)]="patientPhoto" type="file" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Doctor Name</label>
-                    <input type="text" class="form-control">
+                    <input name="doctorName"[(ngModel)]="doctorName" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-success">Submit</button>
+                    <button (click)="readValues()" class="btn btn-success">Submit</button>
                 </div>
             </div>
         </div>
